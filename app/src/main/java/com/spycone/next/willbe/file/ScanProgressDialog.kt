@@ -34,13 +34,11 @@ class ScanProgressDialog(var activity: Activity) : Dialog(activity) {
         CoroutineScope(Dispatchers.IO).launch {
             recurciveLoader(i)
         }
-
-        val startTime = SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
-        startTimeTextView.text = "Scan Start Time: $startTime"
+        startTimeTextView.text = "Scan Duplicate Files"
     }
 
     private suspend fun recurciveLoader(i: Int) {
-        delay(300)
+        delay(200)
         if (i == 0) {
             progressText.texter = "Scanning."
             recurciveLoader(1)

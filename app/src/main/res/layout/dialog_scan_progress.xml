@@ -20,12 +20,15 @@
 
         <ProgressBar
             android:id="@+id/progressBar"
-            style="?android:isolatedProcess"
+            style="?android:progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:layout_marginTop="16dp"
             android:layout_centerInParent="true"
-            android:indeterminateTint="@color/size_" />
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round"
+            android:progressDrawable="@drawable/rotate_process"
+            android:indeterminateTint="@color/size_"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/txtProcess"
