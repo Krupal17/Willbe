@@ -24,8 +24,15 @@
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_marginTop="16dp"
+<<<<<<< Updated upstream
             android:layout_centerInParent="true"
             android:indeterminateTint="@color/size_" />
+=======
+            android:background="@drawable/round"
+            android:indeterminateTint="@color/size_"
+            android:progressDrawable="@drawable/rotate_process"
+            android:textAlignment="center" />
+>>>>>>> Stashed changes
 
         <TextView
             android:id="@+id/txtProcess"
